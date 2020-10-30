@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ABHISHEKA
+Build-Jdk: 14.0.2
+Implementation-Title: mishralibrary
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: de.hexad.library
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/mishralibrary
+Created-By: Maven Integration for Eclipse
+
