@@ -1,6 +1,6 @@
 package de.hexad.mishralibrary.model;
 
-public class UsersDto {
+public class UsersDTO {
 
 	private int userId;
 	private String userName;
@@ -38,4 +38,12 @@ public class UsersDto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public UsersDTO(int userId) {
+		super();
+		this.userId = userId;
+	}
+	public UsersDTO() {
+		super();
+	}
+	
 }

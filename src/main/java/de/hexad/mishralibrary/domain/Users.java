@@ -58,4 +58,12 @@ public class Users {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public Users() {
+		super();
+	}
+	public Users(Integer userId) {
+		super();
+		this.userId = userId;
+	}
+	
 }

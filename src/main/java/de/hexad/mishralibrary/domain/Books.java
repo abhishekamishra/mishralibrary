@@ -24,9 +24,9 @@ public class Books {
 	@Column(name="author")
 	private String author;
 	
-	@ManyToOne
-	@JoinColumn(name="user_id")
-	private Users userId;
+//	@ManyToOne
+//	@JoinColumn(name="user_id")
+//	private Users userId;
 	
 	public int getId() {
 		return id;
@@ -46,10 +46,10 @@ public class Books {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public Users getUserId() {
-		return userId;
-	}
-	public void setUserId(Users userId) {
-		this.userId = userId;
-	}
+//	public Users getUserId() {
+//		return userId;
+//	}
+//	public void setUserId(Users userId) {
+//		this.userId = userId;
+//	}
 }

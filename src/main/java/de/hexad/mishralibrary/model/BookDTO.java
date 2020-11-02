@@ -1,15 +1,18 @@
 package de.hexad.mishralibrary.model;
 
+import java.io.Serializable;
 import java.sql.Date;
+import java.util.List;
 
-public class BookDTO {
+public class BookDTO implements Serializable{
 
 	private int id;
 	private String bookName;
 	private String author;
 	private Date createdDate;
 	private Date modifiedDate;
-	private UsersDto userId;
+	private UsersDTO usersDTO;
+	private List<BookDTO> bookDTOList;
 	
 	public int getId() {
 		return id;
@@ -41,10 +44,22 @@ public class BookDTO {
 	public void setModifiedDate(Date modifiedDate) {
 		this.modifiedDate = modifiedDate;
 	}
-	public UsersDto getUserId() {
-		return userId;
+	public UsersDTO getUsersDTO() {
+		return usersDTO;
 	}
-	public void setUserId(UsersDto userId) {
-		this.userId = userId;
+	public void setUsersDTO(UsersDTO usersDTO) {
+		this.usersDTO = usersDTO;
 	}
+	public List<BookDTO> getBookDTOList() {
+		return bookDTOList;
+	}
+	public void setBookDTOList(List<BookDTO> bookDTOList) {
+		this.bookDTOList = bookDTOList;
+	}
+//	public UsersDto getUserId() {
+//		return userId;
+//	}
+//	public void setUserId(UsersDto userId) {
+//		this.userId = userId;
+//	}
 }
